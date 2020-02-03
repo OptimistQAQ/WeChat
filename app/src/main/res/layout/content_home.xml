@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:id="@+id/tab_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="Suspicious0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/holo_blue_dark"/>
+
+                <ImageView
+                    android:id="@+id/tab_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/simle_logo_00"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tab_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="发现"
+                    tools:ignore="HardcodedText,SpUsage"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="13dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="Suspicious0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <ImageView
+                    android:id="@+id/tab_img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:src="@drawable/simle_logo_00"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tab_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="我"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="13dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tab_layout"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
