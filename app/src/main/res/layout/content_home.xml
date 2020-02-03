@@ -11,44 +11,113 @@
         android:background="@android:color/white"
         tools:ignore="UselessParent">
 
+
+
         <LinearLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:orientation="horizontal"
             android:background="@android:color/white"
-            tools:ignore="DisableBaselineAlignment">
+            tools:ignore="DisableBaselineAlignment"
+            android:layout_marginTop="600dp">
 
             <LinearLayout
                 android:id="@+id/tab_one"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                tools:ignore="Suspicious0dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="Suspicious0dp">
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1px"
-                    android:background="@android:color/holo_blue_dark"/>
+                    android:background="@android:color/holo_blue_dark" />
 
                 <ImageView
                     android:id="@+id/tab_img1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="38dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:src="@drawable/simle_logo_00"
+                    android:background="@drawable/xiaoxi"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tab_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="WeChat"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="13dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="Suspicious0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <ImageView
+                    android:id="@+id/tab_img2"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/tongxunlu"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tab_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:text="通讯录"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textSize="13dp"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="Suspicious0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/holo_blue_dark" />
+
+                <ImageView
+                    android:id="@+id/tab_img3"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:background="@drawable/faxian"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:id="@+id/tab_text3"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_gravity="center_horizontal|center_vertical"
                     android:text="发现"
-                    tools:ignore="HardcodedText,SpUsage"
                     android:textColor="@android:color/holo_red_light"
-                    android:textSize="13dp"/>
+                    android:textSize="13dp"
+                    tools:ignore="HardcodedText,SpUsage" />
 
             </LinearLayout>
 
@@ -67,10 +136,10 @@
 
                 <ImageView
                     android:id="@+id/tab_img4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="38dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center_horizontal|center_vertical"
-                    android:src="@drawable/simle_logo_00"
+                    android:background="@drawable/wo"
                     tools:ignore="ContentDescription" />
 
                 <TextView
